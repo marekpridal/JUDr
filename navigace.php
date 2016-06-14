@@ -22,6 +22,7 @@
             <li class="navigace-button navigace-novy"><a href="vlozit.php?vlozit=1">Nový klient</a></li>
             <li role="separator" class="divider"></li>
             <li class="navigace-button navigace-novy"><a href="vlozit.php?vlozit=2">Nový zaměstnanec</a></li>
+            <li class="navigace-button navigace-novy"><a href="vlozit.php?vlozit=3">Nový spis</a></li>
             <li role="separator" class="divider"></li>
             <li class="navigace-button" id="login"><a href="#"><?php echo $login_session; ?></a></li>
             <li class="navigace-button"><a href="logout.php">Odhlásit</a></li>

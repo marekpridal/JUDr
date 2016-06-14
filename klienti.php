@@ -31,7 +31,7 @@
             <table class="table table-hover table-striped" id="my-table">
                 <thead>
                     <tr>
-                        <th></th><th>ID</th><th>ICO</th><th>Název</th><th>Jméno</th><th>Příjmení</th><th>Telefon</th><th>Email</th><th>Ulice</th><th>Město</th><th>PSČ</th><th>Stát</th>
+                        <th></th><th>ID</th><th>IČO</th><th>Název</th><th>Jméno</th><th>Příjmení</th><th>Telefon</th><th>Email</th><th>Ulice</th><th>Město</th><th>PSČ</th><th>Stát</th>
                     </tr>
                 </thead>
                 <tbody>
