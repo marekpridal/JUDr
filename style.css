@@ -1,0 +1,118 @@
+h1
+{
+    margin-left: 5%;
+}
+.pocet
+{
+    padding-left: 80%;
+}
+table
+{
+    text-align: center;
+}
+th
+{
+    text-align: center;
+    color: black;
+}
+.button
+{
+    border-radius: 4px;
+    background-color: #008CBA; /* Blue */
+    border: none;
+    color: white;
+    padding: 2px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+}
+.button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+thead
+{
+    background-color: cadetblue;
+}
+input[type="submit"] {
+    font-family: FontAwesome;
+}
+nav
+{
+    margin-top: 1.5%;
+}
+.form-group
+{
+    width: 100%;
+}
+.homescreen-panel
+{
+    margin-left: 10%;
+    width: 200px;
+    height: 200px;
+    border-radius: 4px;
+    background-color: cornflowerblue;
+    text-align: center;
+    margin-top: 1%;
+}
+a
+{
+    color: black;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    /* ...and now for the proper property */
+    transition:.5s;
+}
+a:link
+{
+    color: black;
+}
+a:visited
+{
+    color: black;
+}
+a:active 
+{
+    color:  black;
+}
+a:hover
+{
+    color: yellow;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    /* ...and now for the proper property */
+    transition:.5s;
+}
+.homescreen-ico
+{
+    padding-top: 37%;
+}
+.navigace-button:hover
+{
+    background-color: #AEB1B8;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    /* ...and now for the proper property */
+    transition:.5s;
+    color: #C0D14D;
+}
+#login
+{
+    background-color: #9CCDFF;
+}
+.navigace-novy
+{
+    background-color: #BFF5B8;
+}
+.banner-vlozit
+{
+    margin-top: 2%;
+}
