@@ -12,3 +12,5 @@ insert into klienti(ICO,Nazev,Telefon,Email,Ulice,Mesto,PSC,Stat) VALUES("255966
 
 select * from klienti;
 select * from zamestnanci;
+
+select * from spisy;

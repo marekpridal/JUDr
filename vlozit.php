@@ -167,11 +167,14 @@
         case 3:
             $results = dibi::query('SELECT * FROM klienti ORDER BY ID_Klienti ASC');
             $all = $results->fetchAll();  
-            
+            $vysledky = dibi::query('SELECT * FROM zamestnanci ORDER BY Prijmeni ASC');
+            $zamestnanci = $vysledky->fetchAll();            
             
            if((isset($_GET['spis'])))
             {
                 $zaznam = new spis($_GET['spisova_znacka'],$_GET['klient'],$_GET['protistrana'],$_GET['nazev'],$_GET['taxa'],$_GET['pausal'],$login_session);
+               
+                $zamestnanec = $_GET["zamestnanec"];
                
                 if(($zaznam->klient==$zaznam->protistrana))
                 {
@@ -190,7 +193,13 @@
                                 'Pausal' => $zaznam->pausal,
                                 'vlozil' => $zaznam->vlozil,
                             ];
-                    if(dibi::query('INSERT spisy', $arr))
+                    
+                    $zam = [
+                                'Spisy_Spisova_znacka' => $zaznam->spisova_znacka,
+                                'Zamestnanci_ID_zamestnanci' => $zamestnanec,
+                    ];
+                    
+                    if((dibi::query('INSERT spisy', $arr))&&(dibi::query('INSERT spisy_has_zamestnanci', $zam)))
                     {
                         $result='<div class="alert alert-success banner-vlozit">Nový spis úspěšně vložen</div>';    
                     }else $result='<div class="alert alert-info banner-vlozit">Někde se stala chyba</div>';                    
@@ -239,6 +248,19 @@
                                         {
                                          ?>
                                     <option value="<?php echo $row->ID_Klienti; ?>"><?php echo $row->Nazev."".$row->Jmeno." ".$row->Prijmeni; ?></option>    
+                                        <?php
+                                        }
+                                    ?>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="zamestnanec">Zaměstnanec (*)</label><br>
+                                <select class="flexselect" name="zamestnanec" tabindex="-1">
+                                    <?php
+                                        foreach ($zamestnanci as $row)
+                                        {
+                                         ?>
+                                    <option value="<?php echo $row->ID_zamestnanci; ?>"><?php echo $row->Jmeno." ".$row->Prijmeni; ?></option>    
                                         <?php
                                         }
                                     ?>

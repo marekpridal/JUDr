@@ -16,6 +16,7 @@
         <ul class="nav navbar-nav">
             <li class="navigace-button"><a href="klienti.php">Klienti</a></li>
             <li class="navigace-button"><a href="zamestnanci.php">Zaměstnanci</a></li>
+            <li class="navigace-button"><a href="spisy.php">Spisy</a></li>
         </ul>
         
       <ul class="nav navbar-nav navbar-right">
