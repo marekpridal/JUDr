@@ -1,5 +1,5 @@
 <?php
-    include_once "dibi-3.0.4\src\loader.php";
+    include_once "dibi-3.0.4/src/loader.php";
 
 dibi::connect([
     'driver'   => 'mysql',
